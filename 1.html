@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="" content="">
+      <title>DOWNLOAD</title>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11">
+      </script>
+      <style type="text/css">
+         body {
+            margin: 0;
+            padding: 0;
+         }
+         
+         .Download-copy {
+            text-align: center;
+            width: 100%;
+            text-decoration: none;
+         }
+         
+         .Download-copy a {
+            position: absolute;
+            background: #00ADB5;
+            padding: 70px 295px;
+            top: 50px;
+            left: 60px;
+            text-decoration: none;
+            border: 5px solid #006f8b;
+            color: #00ADB5;
+         }
+         
+         .Download-copy a:hover {
+            background: #006f8b;
+            color: #006f8b;
+         }
+         
+         .Download-copy img {
+            position: absolute;
+            background: #00ADB5;
+            padding: -50px;
+            left: 735px;
+            top: 50px;
+            border: 5px solid #006f8b;
+            cursor: pointer;
+         }
+         
+         .Download-copy img:hover {
+            background: #006f8b;
+            color: #00576d73;
+         }
+         
+         .link {
+            position: relative;
+            top: 215px;
+            left: 60px;
+         }
+         
+         .link input {
+            background: #b0b0b0;
+            padding: 25px 241px;
+            border: 5px solid #006f8b;
+            font-family: Tahoma;
+            color: #b0b0b0;
+         }
+         
+         .DASAR {
+            position: relative;
+            top: 265px;
+            left: 60px;
+            font-size: 40px;
+         }
+         
+         .DASAR span {
+            background: #b0b0b0;
+            padding: 50px 276px;
+            border: 5px solid #006f8b;
+            color: #ffffff;
+            font-family: Times New Roman;
+         }
+         
+         .akhiran {
+            font-size: 23px;
+            position: absolute;
+            top: 1240px;
+            background: #9b9b9b42;
+            padding: 20px 468px;
+            text-decoration: none;
+            border-top: 4px solid ;
+         }
+         
+         .akhiran p {
+            font-family: Times New Roman;
+            text-align: center;
+         }
+         
+         .akhiran a {
+            text-decoration: none;
+            color: #000000;
+            background: #00b00f;
+            padding: 10px 15px;
+         }
+         
+         .name-file {
+            position: absolute;
+            top: 70px;
+            left: 90px;
+            color: #373737;
+         }
+         
+         .name-file span {
+            color: #373737;
+            font-size: 50px;
+            color: #000000;
+            font-family: Sans-Serif;
+         }
+         .name-file p {
+            color: #373737;
+            position: absolute;
+            top: 30px;
+            font-size: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="Download-copy">
+         <a onclick="DD()" href="RIG PACK MINECRFT BY WRG.zip">DOWNLOAD</a>
+         <img onclick="COPY()" src="copy.png" width="230px"/>
+      </div>
+      <div class="link">
+         <input type="text" id="LINK" value="LINK MANA" readonly/>
+      </div>
+      <div class="DASAR">
+         <span>DOWNLOAD NOW</span>
+      </div>
+      <div class="akhiran">
+         <p><b>website by</b><br />
+         <br />
+         WRG<br>
+         <br />
+         <br />
+         <br />
+         <br />
+         <b>team website</b><br />
+         <br />
+         WRG<br>
+         <br />
+         <br />
+         <br />
+         <br />
+         <b>privacy policy</b>
+         <br />
+         <br />
+         privaciy
+         <br />
+         <br />
+         <br />
+         <br />
+         <b>JOIN DISCORD</b>
+         <br />
+         <br />
+         <a href="https://discord.gg/vDNmXxeCvz">JOIN</a>
+         </p>
+      </div>
+      <div class="name-file">
+         <span>file name</span>
+         <br />
+         <p class="des">deskripsi</p>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript">
+         function COPY() {
+            var valueText = $("#LINK").select().val();
+            document.execCommand("copy");
+            swal.fire("link berhasil disalin")
+        }
+        
+        function DD() {
+           Swal.fire({
+            position: 'top',
+            icon: 'success',
+            title: 'DOWNLOAD',
+            showConfirmButton: false,
+            timer: 1500
+         })
+        }
+      </script>
+   </body>
+</html>
